@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de cadastro</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Cadastre-se</h1>
+
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="POST" class="formulario">
+            <label> Nome </label>
+            <input type="text" class="nome valida">
+
+            <label> Sobrenome </label>
+            <input type="text" class ="sobrenome valida">
+
+            <label> CPF </label>
+            <input type="text" class ="cpf valida">
+
+            <label> Usuário </label>
+            <input type="text" class ="usuario valida">
+
+            <label> Senha </label>
+            <input type="password" class ="senha valida">
+
+            <label> Confirma senha </label>
+            <input type="password" class ="confirma-senha valida">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/classCPF.js"></script>
+</body>
+</html>
